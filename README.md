@@ -2,18 +2,20 @@
 
 This repository contains the backend code for the SHL Assessment Chatbot. The Flask application leverages a recommendation engine to recommend assessments based on user queries. It uses data from a CSV file and utilizes various Python libraries for data processing and natural language processing.
 # Project Overview
-+ Flask App (app.py):<br><br>
-This is the main file that runs the Flask web server. It sets up the `/recommend` endpoint, handles incoming JSON requests, and returns the recommendations. I’ve also added Flask-CORS to make sure that requests from the frontend can reach the server without issues.<br><br>
-+ SHL_RECOMMENDER_Copy1.py:<br><br>
-This is the module that loads the assessment data from `SHL_DATASET_TOKENIZED.csv`, preprocesses it, and uses TF-IDF vectorization along with cosine similarity to rank the assessments. This module is also responsible for calling Google Generative AI (Gemini) to generate a friendly conversational response.<br><br>
-+ SHL_DATASET_TOKENIZED.csv:<br><br>
-  This CSV file contains the assessment data that the recommender reads and processes.<br><br>
++ Flask App (app.py):<br>
+This is the main file that runs the Flask web server. It sets up the `/recommend` endpoint, handles incoming JSON requests, and returns the recommendations. I’ve also added Flask-CORS to make sure that requests from the frontend can reach the server without issues.<br>
++ SHL_RECOMMENDER_Copy1.py:<br>
+This is the module that loads the assessment data from `SHL_DATASET_TOKENIZED.csv`, preprocesses it, and uses TF-IDF vectorization along with cosine similarity to rank the assessments. This module is also responsible for calling Google Generative AI (Gemini) to generate a friendly conversational response.<br>
++ SHL_DATASET_TOKENIZED.csv:<br>
+  This CSV file contains the assessment data that the recommender reads and processes.<br>
 
   ## Requirements <br>
-  The code runs on my local environment with version : Python 3.13.2 <br>
-  Lower versions might give issue to run this project.<br><br>
+ + The code runs on my local environment with version : Python 3.13.2 <br>
+  Lower versions might give issue to run this project.<br>
 
-  Please run the backend on your local machine by cloning in your local environmnet and running python app.py in the terminal for the backend to run and accept requests. Due to backend deployment issue, it needs to be run on the local machine to test the chatbot in the frontend. 
+  + Please run the backend on your local machine by cloning this entire repository in your local environment (preferably VS CODE). Run python "python app.py" in the terminal for the backend to run and accept requests on the addresses. Incase of any missing module errors, please install/run - **"pip install flask_cors"** and **"pip install google.generativeai"** in the terminal  <br>
+
+  + After running the backend in your local environment, please test the Search Engine - ChatBot at : https://dewang04.github.io/SHL_FRONTEND/
 
 # Backend Deployment Issues on Render
 

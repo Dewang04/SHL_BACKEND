@@ -11,7 +11,9 @@ This is the module that loads the assessment data from `SHL_DATASET_TOKENIZED.cs
 
   ## Requirements <br>
   The code runs on my local environment with version : Python 3.13.2 <br>
-  Lower versions might give issue to run this project.
+  Lower versions might give issue to run this project.<br><br>
+
+  Please run the backend on your local machine by cloning in your local environmnet and running python app.py in the terminal for the backend to run and accept requests. Due to backend deployment issue, it needs to be run on the local machine to test the chatbot in the frontend. 
 
 # Backend Deployment Issues on Render
 
